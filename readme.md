@@ -25,3 +25,10 @@ will filter any lines longer than 80 characters from the output.
 
 Run `go install github.com/kevinburke/sll` and add `"$GOPATH/bin"` to your
 `$PATH` variable.
+
+## Errata
+
+Currently `ag` has a `--print-long-lines` flag, which [has not been
+implemented][ag]. If it does, you should probably use that instead.
+
+[ag]: https://github.com/ggreer/the_silver_searcher/issues/189
