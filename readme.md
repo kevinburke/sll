@@ -26,6 +26,19 @@ will filter any lines longer than 80 characters from the output.
 Run `go install github.com/kevinburke/sll` and add `"$GOPATH/bin"` to your
 `$PATH` variable.
 
+## Other Ways to Implement this
+
+There are many other ways to write this and some of them are listed here. Feel
+free to add your own with a pull request. Be sure to mention how this project
+is "pointless" and a "waste of time". Before merging, I will berate myself for
+having foisted this waste on the unsuspecting Internet population, retreat to
+my parents basement, and promise to never open source a thing I write ever
+again.
+
+- `egrep -v .{1024}`
+- `cut -c 1-1024`
+- `less -S`
+
 ## Errata
 
 Currently `ag` has a `--print-long-lines` flag, which [has not been
