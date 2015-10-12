@@ -38,6 +38,7 @@ again.
 - `egrep -v .{1024}`
 - `cut -c 1-1024`
 - `less -S`
+- `sed -E 's/^(.{0,80}).*/\1/'`
 
 ## Errata
 
